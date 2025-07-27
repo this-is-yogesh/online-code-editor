@@ -75,7 +75,7 @@ async function Header() {
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-3">
             <ThemeSelector />
-            <LanguageSelector hasAccess={Boolean(convexUser?.isPro)} />
+            <LanguageSelector hasAccess={true} />
           </div>
 
           {!convexUser?.isPro && (
@@ -87,7 +87,7 @@ async function Header() {
             >
               <Sparkles className="w-4 h-4 text-amber-400 hover:text-amber-300" />
               <span className="text-sm font-medium text-amber-400/90 hover:text-amber-300">
-                Pro
+                Sign In To Run Code
               </span>
             </Link>
           )}
